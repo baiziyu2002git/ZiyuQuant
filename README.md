@@ -8,7 +8,7 @@
 
 以下图片与视频均来自当前正常安装版的实际窗口。只展示已有记录，不为拍图额外启动研究；历史回测和模拟账户不等于实盘业绩。这个仓库放产品介绍与展示素材，不放工程源码、策略源码、原始数据或安装包。
 
-[先逛一圈：2 分钟全模块实机导览](media/current/all-modules-tour.mp4) · 11 个模块连续浏览，重点操作另有下方短片。
+[进入在线影像页：2 分钟全模块实机导览](https://baiziyu2002git.github.io/ZiyuQuant/#tour) · 直接播放，支持进度拖动与全屏，无需先下载。
 
 ## 最近重点一：市场情绪，把“热闹”拆开看
 
@@ -20,7 +20,7 @@
 
 ![当前安装版：市场情绪概览与叠加曲线](media/current/01-market-sentiment.jpg)
 
-[观看实机操作：市场情绪](media/current/market-sentiment-demo.mp4)
+[在线播放：市场情绪](https://baiziyu2002git.github.io/ZiyuQuant/#sentiment)
 
 它是观察市场状态的研究视角，不是“情绪到某个数，明天就一定涨”的交易指令。数据日期、冻结辅助组件和可见性限制会在页面里说明。
 
@@ -36,7 +36,7 @@
 
 ![当前安装版：因子进化候选对照](media/current/02-factor-evolution.jpg)
 
-[观看实机操作：冻结实验与候选对照](media/current/factor-evolution-demo.mp4)
+[在线播放：冻结实验与候选对照](https://baiziyu2002git.github.io/ZiyuQuant/#evolution)
 
 对照表刻意把几件事拆开：
 
@@ -95,7 +95,7 @@ Q1 是最高因子值组。下面是三年**累计净收益**，不是年化，�
 
 ## 因子研究：先把一个想法看透
 
-[观看实机操作：IC、分层收益与因子目录](media/current/factor-research-demo.mp4)
+[在线播放：IC、分层收益与因子目录](https://baiziyu2002git.github.io/ZiyuQuant/#research)
 
 选股票池、期间和评价频率，调整 MAD、行业／市值中和、标准化，再看 IC、Rank IC、分层收益和行业／风格归因。单个分数只是入口，季度稳定性、分组单调性和暴露往往更值得细看。
 
@@ -137,7 +137,7 @@ Qlib、GTJA、WorldQuant 和个人因子统一管理，按分类、状态和关�
 
 ![当前安装版：净值图与可拖动的双端时间窗口](media/current/07-simulation-chart.jpg)
 
-[观看实机操作：账户展开与时间窗口](media/current/simulation-demo.mp4)
+[在线播放：账户展开与时间窗口](https://baiziyu2002git.github.io/ZiyuQuant/#simulation)
 
 这里是本地模拟与日线延迟回放，不连接券商，也不发送实盘委托。
 
