@@ -1,0 +1,34 @@
+# 只提供数据用途与字段说明；不包含任何作者机器上的数据位置。
+# 将“参考：...”替换为自备数据位置后运行。相对输入位置按 data_root 解析。
+data_root: '参考：自备研究数据的根目录'
+data_paths:
+  market_data: '参考：全A股票日行情及所选因子声明的字段，另含未复权／后复权收盘、市值、行业及风险标记'
+  status_data: '参考：全A股票日交易状态数据，含交易状态及未复权涨跌停价'
+  universe: '参考：逐交易日动态股票池成分数据，含交易日期及证券代码'
+  benchmark: '参考：基准指数日行情，含完整交易日历及指数收盘点位'
+start_date: '2022-01-01'
+end_date: '2024-12-31'
+warmup_start: '2021-10-01'
+groups: 5
+backtest:
+  rebalance_config:
+    rebalance_period: 5
+transaction_cost:
+  enabled: false
+  fee_rate: 0.0
+  slippage: 0.0
+factor:
+  # Python 模块标识，不是作者机器上的文件位置；换因子时只改此项。
+  module: factor_lib.qlib013
+  parameters: {}
+  mad_enabled: true
+  mad_threshold: 3.0
+  neutralization_enabled: true
+  normalization_enabled: true
+  min_cross_section: 30
+ic:
+  winsorize: true
+  lower_quantile: 0.01
+  upper_quantile: 0.99
+# 相对输出位置按本项目根目录解析，也可自行指定独立的输出位置。
+results_dir: '参考：IC与分层回测计算结果的输出目录'

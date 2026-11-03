@@ -6,9 +6,11 @@
 
 这次把展示页也推倒重写了。先看三个最近花时间最多的地方：**市场情绪、因子进化，以及不只关心净值线的回测框架**。后面把全部 11 个模块逐个展开。
 
-以下图片与视频均来自当前正常安装版的实际窗口。只展示已有记录，不为拍图额外启动研究；历史回测和模拟账户不等于实盘业绩。这个仓库放产品介绍与展示素材，不放工程源码、策略源码、原始数据或安装包。
+以下当前展示图片与视频来自 Swift 原生候选版 51.6／51.6.1 的实际窗口。只展示已有记录，不为拍图额外启动研究；历史回测和模拟账户不等于实盘业绩。这个仓库放产品介绍、展示素材及独立中低频回测框架；不提供 App 工程源码、私有策略、原始数据或安装包。
 
-[进入在线影像页：50 秒全模块实机精剪](https://baiziyu2002git.github.io/ZiyuQuant/#tour) · 已删无操作等待，直接播放，支持进度拖动与全屏。操作保持原速，视频不作为响应耗时测试。
+[独立回测框架源码与使用说明](backtest-framework/README.md) · 通用框架与单独因子源码分离，包含 IC、分层、成交执行与绩效评估。数据位置仅保留用途说明，运行需自备数据；它不代表 App 全部功能源码。
+
+[进入在线影像页：2 分 50 秒 Swift 原生全模块实机精剪](https://baiziyu2002git.github.io/ZiyuQuant/#tour) · 已删无操作等待，直接播放，支持进度拖动与全屏。操作保持原速，视频不作为响应耗时测试。
 
 ## 最近重点一：市场情绪，把“热闹”拆开看
 
@@ -18,13 +20,13 @@
 
 默认只开**情绪**，**趋势**按需打开。两者不是同一个东西，也没必要一进来就把六条线全糊脸上。主图、图例、顶部数值和底部缩略图同步；放大、拖动、恢复和悬停都保留。
 
-![当前安装版：市场情绪概览与叠加曲线](media/current/01-market-sentiment.jpg)
+![Swift 原生候选版：市场情绪概览与叠加曲线](media/current/01-market-sentiment.jpg)
 
 [在线播放：市场情绪](https://baiziyu2002git.github.io/ZiyuQuant/#sentiment)
 
 它是观察市场状态的研究视角，不是“情绪到某个数，明天就一定涨”的交易指令。数据日期、冻结辅助组件和可见性限制会在页面里说明。
 
-![当前安装版：情绪分的因子、权重与贡献拆解](media/current/01-market-decomposition.jpg)
+![Swift 原生候选版：情绪分的因子、权重与贡献拆解](media/current/01-market-decomposition.jpg)
 
 当前科创芯片与 CPO 使用 ETF 代理；最新披露的前十大持仓固定用于历史窗口，不冒充逐日历史持仓。趋势历史没有证据的部分也不回填，这些近似在「数据与限制」里明说。
 
@@ -34,7 +36,7 @@
 
 这里先冻结父因子、目标、约束、股票池、日期和处理配置，再迭代候选。既可以走确认后的模型请求，也能导出任务包、导入结构化响应；第几轮的候选，就在第几轮里看。总览、父因子诊断、候选对照、家族图谱、实验记录都围绕同一个实验身份。
 
-![当前安装版：因子进化候选对照](media/current/02-factor-evolution.jpg)
+![Swift 原生候选版：因子进化候选对照](media/current/02-factor-evolution.jpg)
 
 [在线播放：冻结实验与候选对照](https://baiziyu2002git.github.io/ZiyuQuant/#evolution)
 
@@ -101,7 +103,7 @@ Q1 是最高因子值组。下面是三年**累计净收益**，不是年化，�
 
 可以新建或导入自己的因子，先做本地验证，再保存到因子库。研究配置、实际源码身份、数据版本和输出一起留档；不会因为改了显示精度就改变原始判断。
 
-![当前安装版：因子研究与评价结果](media/current/03-factor-research.jpg)
+![Swift 原生候选版：因子研究与评价结果](media/current/03-factor-research.jpg)
 
 ## 因子大全：让因子不再散落在文件夹里
 
@@ -109,7 +111,7 @@ Qlib、GTJA、WorldQuant 和个人因子统一管理，按分类、状态和关�
 
 “本地验证通过”不等于“有投资价值”，更不等于正式研究放行。待验证、数据不足、研究受阻这些状态仍各自保留。
 
-![当前安装版：因子大全](media/current/04-factor-catalog.jpg)
+![Swift 原生候选版：因子大全](media/current/04-factor-catalog.jpg)
 
 ## 模型研究：训练效果和样本外表现分开看
 
@@ -117,7 +119,7 @@ Qlib、GTJA、WorldQuant 和个人因子统一管理，按分类、状态和关�
 
 预测结果可以继续进入策略回测，但模型跑完不代表策略能成交。没有已有模型结果的页面就展示真实未运行状态，不临时训练一个来装门面。
 
-![当前安装版：模型研究配置与结果入口](media/current/05-model-research.jpg)
+![Swift 原生候选版：模型研究配置与结果入口](media/current/05-model-research.jpg)
 
 ## 策略回测：从收益曲线追到订单
 
@@ -125,7 +127,7 @@ Qlib、GTJA、WorldQuant 和个人因子统一管理，按分类、状态和关�
 
 研究价格、成交价格和持仓估值不混成一笔账。公司事件与总回报近似等假设会披露，不把研究假设包装成实盘执行。
 
-![当前安装版：策略回测](media/current/06-strategy-backtest.jpg)
+![Swift 原生候选版：策略回测](media/current/06-strategy-backtest.jpg)
 
 ## 模拟验证：把策略放进每天的账里
 
@@ -133,9 +135,9 @@ Qlib、GTJA、WorldQuant 和个人因子统一管理，按分类、状态和关�
 
 青蓝策略线、珊瑚红基准线、回撤标记、悬停明细和双端时间窗口都服务于查账。拖动底部缩略区间，可以聚焦一段；首显／展开的数字动效只是呈现，不代表又在计算。减少动态效果时内容照样可读。
 
-![当前安装版：模拟验证账户与净值](media/current/07-simulation.jpg)
+![Swift 原生候选版：模拟验证账户与净值](media/current/07-simulation.jpg)
 
-![当前安装版：净值图与可拖动的双端时间窗口](media/current/07-simulation-chart.jpg)
+![Swift 原生候选版：净值图与可拖动的双端时间窗口](media/current/07-simulation-chart.jpg)
 
 [在线播放：账户展开与时间窗口](https://baiziyu2002git.github.io/ZiyuQuant/#simulation)
 
@@ -145,27 +147,31 @@ Qlib、GTJA、WorldQuant 和个人因子统一管理，按分类、状态和关�
 
 搜索证券，按日期看日线 K 线、均线、成交与区间信息，保留缩放、拖动和悬停。数据有没有发布到那一天，会按真实覆盖显示，不把缺口补成一条理想曲线。
 
-![当前安装版：历史行情](media/current/08-historical-quotes.jpg)
+![Swift 原生候选版：历史行情](media/current/08-historical-quotes.jpg)
 
-这张图保留了本机当时的「更新失败，继续显示截至 2026-08-10 的数据」提示。这是已有历史样本，不是 10 月实时行情；本次没有为了展示重新请求行情。
+截图保留真实历史覆盖：股票样本截至 2026-08-10，指数样本截至 2026-05-29，不是实时行情；本次没有为了展示重新请求行情。
+
+[在线播放：历史行情](https://baiziyu2002git.github.io/ZiyuQuant/#historical-quotes)
 
 ## 数据中心：先知道自己到底用了什么
 
 数据集、股票池、日期覆盖、字段和运行时组件集中查看，价格口径、单位、冻结辅助输入和限制也放在这里。换一份数据，不该悄悄沿用另一份结果的身份。
 
-![当前安装版：数据中心](media/current/09-data-center.jpg)
+![Swift 原生候选版：数据中心](media/current/09-data-center.jpg)
+
+[在线播放：数据中心](https://baiziyu2002git.github.io/ZiyuQuant/#data-center)
 
 ## 运行历史：结果可以回头对账
 
 每次研究或回测保留对应的代码、配置、数据身份、状态与结果入口。完成、失败、部分完成分别记录；进度到 100% 不等于所有证据都通过，更不等于可以正式接受因子。
 
-![当前安装版：运行历史](media/current/10-run-history.jpg)
+![Swift 原生候选版：运行历史](media/current/10-run-history.jpg)
 
 ## 系统设置：让桌面按自己的习惯工作
 
 主题、开场、减少动态效果，以及市场情绪自动更新和账户回测默认费率，都从正常设置入口管理。减少动效时功能不会跟着消失；危险操作和费用确认也不会被动画绕过去。
 
-![当前安装版：系统设置](media/current/11-settings.jpg)
+![Swift 原生候选版：系统设置](media/current/11-settings.jpg)
 
 ## 还有哪些边界
 
@@ -174,8 +180,17 @@ Qlib、GTJA、WorldQuant 和个人因子统一管理，按分类、状态和关�
 这是持续打磨的个人项目。有些地方已经顺手，有些地方还会明确受阻。图可以好看，账不能糊。
 
 <details>
-<summary>本次展示页更新说明 · 2026-10-19</summary>
+<summary>历史展示页更新说明 · 2026-10-19</summary>
 
 重新组织产品介绍，全部模块直接图文展开；替换为当前安装版实机截图，并补充静音窗口录屏。市场情绪、因子进化和回测口径放在开头。历史设计预览不再充当正式 App 展示图。本次不发布源码、数据或安装包，不把界面验收扩展为因子正式放行。
 
 </details>
+
+
+## 本次素材更新 · 2026-11-03
+
+八支视频与十三张当前截图已替换为 Swift 原生实录，包含开场动画；专题音乐使用不同乐段。操作保持原速，不插帧、不以剪辑时长或 60fps 编码宣称 App 实际帧率。当前展示不等于全部功能验收。
+
+配乐：[“Tears in Rain” by Scott Buckley](https://www.scottbuckley.com.au/library/tears-in-rain/)，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。已节选、平衡音量并淡入淡出，署名保留在每支片尾。
+
+[在线播放：原生开场](https://baiziyu2002git.github.io/ZiyuQuant/#opening) · [查看独立回测框架](backtest-framework/README.md)

@@ -1,0 +1,6 @@
+numpy>=2.0
+pandas>=2.2
+pyarrow>=14.0
+scipy>=1.14
+matplotlib>=3.9
+PyYAML>=6.0

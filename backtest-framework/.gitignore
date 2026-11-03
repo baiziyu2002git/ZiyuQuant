@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+results/
+.DS_Store
+data/
+*.parquet
+*.csv
+*.arrow
+*.feather
+.env
