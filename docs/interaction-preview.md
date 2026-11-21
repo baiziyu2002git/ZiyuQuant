@@ -10,6 +10,6 @@
 | [模拟验证](../media/current/simulation.mp4) | 近 20 日、近 40 日、全部；自定义区间后，沿模拟策略和基准走势查读数。 |
 | [模型研究](../media/current/model.mp4) | 对照同一天的样本外 IC 和 Rank IC，观察悬停线条的强调效果。 |
 
-配乐：[《Tears in Rain》](https://www.scottbuckley.com.au/library/tears-in-rain/) · Scott Buckley，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。各片选取不同片段，调整了音量并作淡入淡出；保留底部中文字幕，无配音。
+配乐：[《Tears in Rain》](https://www.scottbuckley.com.au/library/tears-in-rain/) · Scott Buckley，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。各片选取不同片段，调整了音量并作淡入淡出；视频字幕以黑底白字叠在窗口内，截图不带字幕，无配音。
 
 [返回工作台介绍](../README.md)

@@ -2,6 +2,8 @@
 
 这是我用来看 A 股、读研报和试因子的工作台。我想回答的问题都挺具体：一个指标过去有用吗？两个好看的因子，买的是不是同一批股票？回测说该买，那天真的买得进吗？
 
+**为什么叫「无尽前海」？** 拉丁语 *infinitus* 意为「无尽」。我现在在深圳，前海是深圳的一个核心区域，就借了它的名字。「无尽」说的是总有问题值得继续研究，「前海」记的是我做这个工作台的地方。
+
 [![播放：无尽前海，一镜逛完十三个模块](media/current/all-modules-tour.jpg)](https://baiziyu2002git.github.io/ZiyuQuant/media/current/all-modules-tour.mp4)
 
 **置顶总览** · 同一个窗口，一镜到底，中文字幕。[打开影像页](https://baiziyu2002git.github.io/ZiyuQuant/#tour) ｜ [本地视频](media/current/all-modules-tour.mp4)
@@ -237,4 +239,4 @@ Q1 是最高因子值组。下面是三年**累计净收益**，不是年化，�
 
 这些都是历史研究或模拟，不是实盘业绩，也不是收益承诺。[实验方法与限制](docs/research-notes.md) · [完整历史实验记录](docs/周频与涨跌停实验.md) · [独立回测框架](backtest-framework/README.md)
 
-配乐：[《Tears in Rain》](https://www.scottbuckley.com.au/library/tears-in-rain/) · Scott Buckley，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。各片选取不同片段，调整了音量并作淡入淡出；保留底部中文字幕，无配音。
+配乐：[《Tears in Rain》](https://www.scottbuckley.com.au/library/tears-in-rain/) · Scott Buckley，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。各片选取不同片段，调整了音量并作淡入淡出；视频字幕以黑底白字叠在窗口内，截图不带字幕，无配音。
