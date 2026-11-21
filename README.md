@@ -4,7 +4,7 @@
 
 [![播放：无尽前海，一镜逛完十三个模块](media/current/all-modules-tour.jpg)](https://baiziyu2002git.github.io/ZiyuQuant/media/current/all-modules-tour.mp4)
 
-**置顶总览** · 同一个窗口，一镜到底，中文旁白。[打开影像页](https://baiziyu2002git.github.io/ZiyuQuant/#tour) ｜ [本地视频](media/current/all-modules-tour.mp4)
+**置顶总览** · 同一个窗口，一镜到底，中文字幕。[打开影像页](https://baiziyu2002git.github.io/ZiyuQuant/#tour) ｜ [本地视频](media/current/all-modules-tour.mp4)
 
 ## 最近更新
 
@@ -114,4 +114,4 @@ Q1 是最高因子值组。下面是三年**累计净收益**，不是年化，�
 
 这些都是历史研究或模拟，不是实盘业绩，也不是收益承诺。[实验方法与限制](docs/research-notes.md) · [完整历史实验记录](docs/周频与涨跌停实验.md) · [独立回测框架](backtest-framework/README.md)
 
-配乐：[《Tears in Rain》](https://www.scottbuckley.com.au/library/tears-in-rain/) — Scott Buckley，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。视频使用节选，调整了音量并混入中文旁白。
+四支视频均为静音实录，字幕直接显示在画面底部。
