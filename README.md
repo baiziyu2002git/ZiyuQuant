@@ -8,25 +8,27 @@
 
 ## 最近更新
 
-研报里读到的因子，现在有地方放了：能找回出处，测完再决定收不收。模型研究可以在同一批输入上换模型，比没见过的行情；因子图谱则用来找那些名字不同、表现却很像的信号。
+**[因子图谱](https://baiziyu2002git.github.io/ZiyuQuant/#atlas)**：先看看库里哪些因子相似，再用八轴雷达看它们放在一起补了什么、还缺什么。
+
+**[因子挖掘](https://baiziyu2002git.github.io/ZiyuQuant/#mining)**：从研报原文一路查到候选和回测成绩，值不值得入库，由你定门槛。
 
 ## 桌面里都有什么？
 
 | 模块 | 我一般拿它做什么 |
 | --- | --- |
-| [因子研究](https://baiziyu2002git.github.io/ZiyuQuant/#research) | 挑一个因子，看它能不能把后来的强弱排出顺序。除了 IC，我也会看分层收益：是每一层都有规律，还是只靠头尾两层撑场面？ |
-| [因子大全](https://baiziyu2002git.github.io/ZiyuQuant/#catalog) | 找以前测过的因子，或挑一组一起跑。日频和周频的成绩分开看；没测到的地方留空，比填个零靠谱。 |
-| [因子图谱](https://baiziyu2002git.github.io/ZiyuQuant/#atlas) | 两个因子听着八竿子打不着，选的股票可能很像。先找近邻，再看放进同一组合有没有多大意义。 |
-| [因子进化](https://baiziyu2002git.github.io/ZiyuQuant/#evolution) | 把一个熟悉的因子改一改，拉回原来的股票池和时间段，跟它的上一代比。新点子不自带加分。 |
-| [因子挖掘](https://baiziyu2002git.github.io/ZiyuQuant/#mining) | 研报读到一半，看到一个好点子，可以把原文出处和候选放在一起。回测成绩够不够进库，门槛自己定。 |
-| [模型研究](https://baiziyu2002git.github.io/ZiyuQuant/#model) | 固定同一组输入，留一段行情不给模型看。最后比这段行情上的预测，比训练分数有意思得多。 |
-| [策略回测](https://baiziyu2002git.github.io/ZiyuQuant/#backtest) | 看曲线时我最爱追问：拐弯那天做了哪笔交易？从净值翻到委托，就能分清是判断错了，还是根本没成交。 |
-| [模拟验证](https://baiziyu2002git.github.io/ZiyuQuant/#simulation) | 策略先在模拟账本里过日子。明日预单、实际成交和持仓各记各的，不把准备买当成已经买。 |
-| [市场情绪](https://baiziyu2002git.github.io/ZiyuQuant/#sentiment) | 有时候指数收红，手里的票却绿了一片。把市场走势和内部强弱摆在一起，盘面就没那么玄乎。 |
-| [历史行情](https://baiziyu2002git.github.io/ZiyuQuant/#historical-quotes) | 把图翻到那一天，同时看价格和量。单只证券的最新日期和全市场的数据截止日，是两件事。 |
-| [数据中心](https://baiziyu2002git.github.io/ZiyuQuant/#data-center) | 动手研究前，先来查一眼：这份数据有什么、覆盖到哪天。少一块数据，不能靠一行漂亮数字盖过去。 |
-| [运行历史](https://baiziyu2002git.github.io/ZiyuQuant/#history) | 找回哪天、用什么条件跑过哪项研究。完成和中断都留着，以后不用靠记忆猜当时用了哪套设置。 |
-| [系统设置](https://baiziyu2002git.github.io/ZiyuQuant/#settings) | 深浅色、动效和日常偏好在这里改。晚上看图久了，我更愿意把灯关小一点。 |
+| [因子图谱](https://baiziyu2002git.github.io/ZiyuQuant/#atlas) | 查一查哪些因子表现相似，再看组合的八轴雷达。点选一根轴，就能看到哪些因子贡献最多。 |
+| [因子挖掘](https://baiziyu2002git.github.io/ZiyuQuant/#mining) | 从研报里找因子，点开就能对照原文。看过回测成绩，再按自己设的门槛决定收不收进因子库。 |
+| [因子研究](https://baiziyu2002git.github.io/ZiyuQuant/#research) | 挑一个因子做回测，看它能不能把股票排出强弱，再对照各组后来的收益。 |
+| [因子大全](https://baiziyu2002git.github.io/ZiyuQuant/#catalog) | 按股票池和频率查已有成绩，也能选一批因子一起跑。没有测过的就留空。 |
+| [因子进化](https://baiziyu2002git.github.io/ZiyuQuant/#evolution) | 把原因子和改过的候选放回同一段行情，看改动有没有帮上忙。 |
+| [模型研究](https://baiziyu2002git.github.io/ZiyuQuant/#model) | 用同一批因子试不同模型，再拿训练时没见过的行情比较预测表现。 |
+| [策略回测](https://baiziyu2002git.github.io/ZiyuQuant/#backtest) | 沿着净值曲线找拐点，回看当天的委托和成交，弄清哪笔交易影响了结果。 |
+| [模拟验证](https://baiziyu2002git.github.io/ZiyuQuant/#simulation) | 看策略在模拟账户里怎么走。明日预单、实际成交和持仓分开记录。 |
+| [市场情绪](https://baiziyu2002git.github.io/ZiyuQuant/#sentiment) | 把几条市场强弱曲线放在一起，换个时间段，看它们从哪天开始分岔。 |
+| [历史行情](https://baiziyu2002git.github.io/ZiyuQuant/#historical-quotes) | 拖动日线图，查看某一天的价格、均线和成交量，也能核对行情更新到了哪天。 |
+| [数据中心](https://baiziyu2002git.github.io/ZiyuQuant/#data-center) | 研究前先查有哪些数据、各自覆盖哪段日期，免得拿不同区间的结果硬比。 |
+| [运行历史](https://baiziyu2002git.github.io/ZiyuQuant/#history) | 找回以前跑过的研究，查当时的设置、完成状态和已保存的结果。 |
+| [系统设置](https://baiziyu2002git.github.io/ZiyuQuant/#settings) | 切换深浅色和动效，调整日常使用偏好与默认交易费用。 |
 
 ## 五段可以单独看的小片
 
@@ -116,4 +118,4 @@ Q1 是最高因子值组。下面是三年**累计净收益**，不是年化，�
 
 这些都是历史研究或模拟，不是实盘业绩，也不是收益承诺。[实验方法与限制](docs/research-notes.md) · [完整历史实验记录](docs/周频与涨跌停实验.md) · [独立回测框架](backtest-framework/README.md)
 
-总览和五支专题均为静音实录，字幕直接显示在画面底部。
+配乐：[《Tears in Rain》](https://www.scottbuckley.com.au/library/tears-in-rain/) · Scott Buckley，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。各片选取不同片段，调整了音量并作淡入淡出；保留底部中文字幕，无配音。
