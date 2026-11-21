@@ -28,11 +28,13 @@
 | [运行历史](https://baiziyu2002git.github.io/ZiyuQuant/#history) | 找回哪天、用什么条件跑过哪项研究。完成和中断都留着，以后不用靠记忆猜当时用了哪套设置。 |
 | [系统设置](https://baiziyu2002git.github.io/ZiyuQuant/#settings) | 深浅色、动效和日常偏好在这里改。晚上看图久了，我更愿意把灯关小一点。 |
 
-## 三段可以单独看的小片
+## 五段可以单独看的小片
 
-| 因子图谱：换个因子看成绩 | 市场情绪：拉长或缩短观察窗口 | 历史行情：价格和成交量放一起 |
+| 因子图谱：从成员成绩到八轴雷达 | 市场情绪：换区间、沿曲线读数 | 历史行情：拖动手柄与时间选区 |
 | --- | --- | --- |
 | [![因子图谱](media/current/atlas.jpg)](https://baiziyu2002git.github.io/ZiyuQuant/media/current/atlas.mp4) | [![市场情绪](media/current/sentiment.jpg)](https://baiziyu2002git.github.io/ZiyuQuant/media/current/sentiment.mp4) | [![历史行情](media/current/historical-quotes.jpg)](https://baiziyu2002git.github.io/ZiyuQuant/media/current/historical-quotes.mp4) |
+
+另外两段专门看叠在一起的线：[模拟验证：在近 20 日、近 40 日和全部之间切换](https://baiziyu2002git.github.io/ZiyuQuant/media/current/simulation.mp4)；[模型研究：沿 IC 和 Rank IC 曲线移动，比较同日读数](https://baiziyu2002git.github.io/ZiyuQuant/media/current/model.mp4)。
 
 演示里有设置、有保存的成绩，也有未完成的研究。不把刚点下去的任务当成已经跑出了收益。
 
@@ -114,4 +116,4 @@ Q1 是最高因子值组。下面是三年**累计净收益**，不是年化，�
 
 这些都是历史研究或模拟，不是实盘业绩，也不是收益承诺。[实验方法与限制](docs/research-notes.md) · [完整历史实验记录](docs/周频与涨跌停实验.md) · [独立回测框架](backtest-framework/README.md)
 
-四支视频均为静音实录，字幕直接显示在画面底部。
+总览和五支专题均为静音实录，字幕直接显示在画面底部。
